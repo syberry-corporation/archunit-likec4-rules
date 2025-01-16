@@ -1,0 +1,12 @@
+root = true
+
+[src/test/kotlin/**/*]
+max_line_length = 400
+ktlint_standard_function-naming=disabled
+ktlint_standard_property-naming=disabled
+
+[src/main/kotlin/**/*]
+max_line_length = 120
+
+[*]
+ktlint_standard_filename=disabled

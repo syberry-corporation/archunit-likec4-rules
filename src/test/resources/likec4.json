@@ -1,0 +1,1158 @@
+{
+  "__": "layouted",
+  "specification": {
+    "tags": [],
+    "elements": {
+      "system": {
+        "style": {}
+      },
+      "component": {
+        "style": {}
+      },
+      "module": {
+        "style": {}
+      }
+    },
+    "relationships": {}
+  },
+  "elements": {
+    "omega": {
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Omega",
+      "kind": "system",
+      "id": "omega"
+    },
+    "google": {
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Google",
+      "kind": "system",
+      "id": "google"
+    },
+    "omega.crm": {
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "CRM",
+      "kind": "component",
+      "id": "omega.crm"
+    },
+    "omega.iam": {
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Identity And Access Management",
+      "kind": "component",
+      "id": "omega.iam"
+    },
+    "omega.crm.domain": {
+      "metadata": {
+        "package": "..crm.domain.."
+      },
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Domain",
+      "kind": "module",
+      "id": "omega.crm.domain"
+    },
+    "omega.crm.utils": {
+      "metadata": {
+        "package": "..crm.utils.."
+      },
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Utils",
+      "kind": "module",
+      "id": "omega.crm.utils"
+    },
+    "omega.crm.audit": {
+      "metadata": {
+        "package": "..crm.audit.."
+      },
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Audit",
+      "kind": "module",
+      "id": "omega.crm.audit"
+    },
+    "omega.crm.domain.account": {
+      "metadata": {
+        "package": "..crm.domain.account.."
+      },
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Account",
+      "kind": "module",
+      "id": "omega.crm.domain.account"
+    },
+    "omega.crm.domain.lead": {
+      "metadata": {
+        "package": "..crm.domain.lead.."
+      },
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Lead",
+      "kind": "module",
+      "id": "omega.crm.domain.lead"
+    },
+    "omega.crm.domain.contact": {
+      "metadata": {
+        "package": "..crm.domain.contact.."
+      },
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Contact",
+      "kind": "module",
+      "id": "omega.crm.domain.contact"
+    },
+    "omega.crm.domain.opportunity": {
+      "metadata": {
+        "package": "..crm.domain.opportunity.."
+      },
+      "style": {},
+      "links": null,
+      "tags": null,
+      "technology": null,
+      "description": null,
+      "title": "Opportunity",
+      "kind": "module",
+      "id": "omega.crm.domain.opportunity"
+    }
+  },
+  "relations": {
+    "adz1hn": {
+      "title": "",
+      "source": "omega.crm.domain.opportunity",
+      "target": "omega.crm.domain.account",
+      "id": "adz1hn"
+    },
+    "25phmx": {
+      "title": "",
+      "source": "omega.crm.domain.opportunity",
+      "target": "omega.crm.domain.contact",
+      "id": "25phmx"
+    },
+    "1rsuh1g": {
+      "title": "",
+      "source": "omega.crm.domain.opportunity",
+      "target": "omega.crm.domain.lead",
+      "id": "1rsuh1g"
+    },
+    "wah6vw": {
+      "title": "",
+      "source": "omega.crm.domain.contact",
+      "target": "omega.crm.domain.lead",
+      "id": "wah6vw"
+    },
+    "1dvg36j": {
+      "title": "",
+      "source": "omega.crm.domain.account",
+      "target": "omega.crm.domain.lead",
+      "id": "1dvg36j"
+    },
+    "hqwv9x": {
+      "title": "",
+      "source": "omega.crm.domain",
+      "target": "omega.crm.audit",
+      "id": "hqwv9x"
+    },
+    "1gbb5ta": {
+      "title": "",
+      "source": "omega.crm.domain",
+      "target": "omega.crm.utils",
+      "id": "1gbb5ta"
+    },
+    "upkoj0": {
+      "title": "Gets permissions",
+      "source": "omega.crm",
+      "target": "omega.iam",
+      "id": "upkoj0"
+    },
+    "b2ju7l": {
+      "title": "makes requests",
+      "source": "omega",
+      "target": "google",
+      "id": "b2ju7l"
+    }
+  },
+  "globals": {
+    "styles": {}
+  },
+  "views": {
+    "index": {
+      "__": "element",
+      "id": "index",
+      "title": "Landscape view",
+      "description": null,
+      "tags": null,
+      "links": null,
+      "customColorDefinitions": {},
+      "relativePath": "",
+      "autoLayout": {
+        "direction": "TB"
+      },
+      "hash": "4fd0dd6d5e7e11c586a8b6083319d6640dbfa875",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 503
+      },
+      "nodes": [
+        {
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Omega",
+          "kind": "system",
+          "id": "omega",
+          "parent": null,
+          "level": 0,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [],
+          "outEdges": [
+            "omega:google"
+          ],
+          "style": {},
+          "navigateTo": "view_13o5bip",
+          "position": [
+            0,
+            0
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 127,
+            "y": 75,
+            "width": 66,
+            "height": 23
+          }
+        },
+        {
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Google",
+          "kind": "system",
+          "id": "google",
+          "parent": null,
+          "level": 0,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [
+            "omega:google"
+          ],
+          "outEdges": [],
+          "style": {},
+          "position": [
+            0,
+            323
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 127,
+            "y": 75,
+            "width": 65,
+            "height": 23
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "omega:google",
+          "source": "omega",
+          "target": "google",
+          "label": "makes requests",
+          "dotpos": "e,160.02,322.97 160.02,179.93 160.02,221.13 160.02,270.24 160.02,312.63",
+          "points": [
+            [
+              160,
+              180
+            ],
+            [
+              160,
+              221
+            ],
+            [
+              160,
+              270
+            ],
+            [
+              160,
+              313
+            ]
+          ],
+          "labelBBox": {
+            "x": 161,
+            "y": 240,
+            "width": 103,
+            "height": 18
+          },
+          "parent": null,
+          "relations": [
+            "b2ju7l"
+          ]
+        }
+      ]
+    },
+    "view_17t2k5c": {
+      "__": "element",
+      "viewOf": "omega.crm",
+      "tags": null,
+      "links": null,
+      "description": null,
+      "title": "CRM",
+      "id": "view_17t2k5c",
+      "customColorDefinitions": {},
+      "relativePath": "test.likec4",
+      "autoLayout": {
+        "direction": "TB"
+      },
+      "hash": "7d5fc8d9d009c8398651d290623e45ac4585f8eb",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1038,
+        "height": 1258
+      },
+      "nodes": [
+        {
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "CRM",
+          "kind": "component",
+          "id": "omega.crm",
+          "parent": null,
+          "level": 0,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [
+            "omega.crm.domain",
+            "omega.crm.utils",
+            "omega.crm.audit"
+          ],
+          "inEdges": [],
+          "outEdges": [],
+          "style": {},
+          "depth": 2,
+          "position": [
+            8,
+            8
+          ],
+          "width": 1022,
+          "height": 1242,
+          "labelBBox": {
+            "x": 6,
+            "y": 0,
+            "width": 29,
+            "height": 15
+          }
+        },
+        {
+          "metadata": {
+            "package": "..crm.domain.."
+          },
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Domain",
+          "kind": "module",
+          "id": "omega.crm.domain",
+          "parent": "omega.crm",
+          "level": 1,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [
+            "omega.crm.domain.opportunity",
+            "omega.crm.domain.contact",
+            "omega.crm.domain.account",
+            "omega.crm.domain.lead"
+          ],
+          "inEdges": [],
+          "outEdges": [
+            "omega.crm.domain:omega.crm.audit",
+            "omega.crm.domain:omega.crm.utils"
+          ],
+          "style": {},
+          "depth": 1,
+          "position": [
+            48,
+            69
+          ],
+          "width": 942,
+          "height": 881,
+          "labelBBox": {
+            "x": 6,
+            "y": 0,
+            "width": 49,
+            "height": 15
+          }
+        },
+        {
+          "metadata": {
+            "package": "..crm.domain.opportunity.."
+          },
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Opportunity",
+          "kind": "module",
+          "id": "omega.crm.domain.opportunity",
+          "parent": "omega.crm.domain",
+          "level": 2,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [],
+          "outEdges": [
+            "omega.crm.domain.opportunity:omega.crm.domain.contact",
+            "omega.crm.domain.opportunity:omega.crm.domain.lead",
+            "omega.crm.domain.opportunity:omega.crm.domain.account"
+          ],
+          "style": {},
+          "position": [
+            518,
+            130
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 109,
+            "y": 75,
+            "width": 102,
+            "height": 23
+          }
+        },
+        {
+          "metadata": {
+            "package": "..crm.domain.contact.."
+          },
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Contact",
+          "kind": "module",
+          "id": "omega.crm.domain.contact",
+          "parent": "omega.crm.domain",
+          "level": 2,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [
+            "omega.crm.domain.opportunity:omega.crm.domain.contact"
+          ],
+          "outEdges": [
+            "omega.crm.domain.contact:omega.crm.domain.lead"
+          ],
+          "style": {},
+          "position": [
+            88,
+            430
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 125,
+            "y": 75,
+            "width": 69,
+            "height": 23
+          }
+        },
+        {
+          "metadata": {
+            "package": "..crm.domain.account.."
+          },
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Account",
+          "kind": "module",
+          "id": "omega.crm.domain.account",
+          "parent": "omega.crm.domain",
+          "level": 2,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [
+            "omega.crm.domain.opportunity:omega.crm.domain.account"
+          ],
+          "outEdges": [
+            "omega.crm.domain.account:omega.crm.domain.lead"
+          ],
+          "style": {},
+          "position": [
+            518,
+            430
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 124,
+            "y": 75,
+            "width": 73,
+            "height": 23
+          }
+        },
+        {
+          "metadata": {
+            "package": "..crm.domain.lead.."
+          },
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Lead",
+          "kind": "module",
+          "id": "omega.crm.domain.lead",
+          "parent": "omega.crm.domain",
+          "level": 2,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [
+            "omega.crm.domain.opportunity:omega.crm.domain.lead",
+            "omega.crm.domain.contact:omega.crm.domain.lead",
+            "omega.crm.domain.account:omega.crm.domain.lead"
+          ],
+          "outEdges": [],
+          "style": {},
+          "position": [
+            518,
+            730
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 137,
+            "y": 75,
+            "width": 46,
+            "height": 23
+          }
+        },
+        {
+          "metadata": {
+            "package": "..crm.utils.."
+          },
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Utils",
+          "kind": "module",
+          "id": "omega.crm.utils",
+          "parent": "omega.crm",
+          "level": 1,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [
+            "omega.crm.domain:omega.crm.utils"
+          ],
+          "outEdges": [],
+          "style": {},
+          "position": [
+            164,
+            1030
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 140,
+            "y": 75,
+            "width": 41,
+            "height": 23
+          }
+        },
+        {
+          "metadata": {
+            "package": "..crm.audit.."
+          },
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Audit",
+          "kind": "module",
+          "id": "omega.crm.audit",
+          "parent": "omega.crm",
+          "level": 1,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [
+            "omega.crm.domain:omega.crm.audit"
+          ],
+          "outEdges": [],
+          "style": {},
+          "position": [
+            594,
+            1030
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 136,
+            "y": 75,
+            "width": 47,
+            "height": 23
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "omega.crm.domain.opportunity:omega.crm.domain.contact",
+          "source": "omega.crm.domain.opportunity",
+          "target": "omega.crm.domain.contact",
+          "label": null,
+          "dotpos": "e,376.31,430.48 549.86,310.2 497.82,346.27 437.61,387.99 384.73,424.64",
+          "points": [
+            [
+              550,
+              310
+            ],
+            [
+              498,
+              346
+            ],
+            [
+              438,
+              388
+            ],
+            [
+              385,
+              425
+            ]
+          ],
+          "labelBBox": null,
+          "parent": "omega.crm.domain",
+          "relations": [
+            "25phmx"
+          ]
+        },
+        {
+          "id": "omega.crm.domain.opportunity:omega.crm.domain.lead",
+          "source": "omega.crm.domain.opportunity",
+          "target": "omega.crm.domain.lead",
+          "label": null,
+          "dotpos": "e,802.18,730.47 802.18,310.33 838.45,343.47 873.55,384.37 893,430.4 924.14,504.09 924.14,536.71 893,610.4 874.92,653.2 843.31,691.56 809.81,723.37",
+          "points": [
+            [
+              802,
+              310
+            ],
+            [
+              838,
+              343
+            ],
+            [
+              874,
+              384
+            ],
+            [
+              893,
+              430
+            ],
+            [
+              924,
+              504
+            ],
+            [
+              924,
+              537
+            ],
+            [
+              893,
+              610
+            ],
+            [
+              875,
+              653
+            ],
+            [
+              843,
+              692
+            ],
+            [
+              810,
+              723
+            ]
+          ],
+          "labelBBox": null,
+          "parent": "omega.crm.domain",
+          "relations": [
+            "1rsuh1g"
+          ]
+        },
+        {
+          "id": "omega.crm.domain.opportunity:omega.crm.domain.account",
+          "source": "omega.crm.domain.opportunity",
+          "target": "omega.crm.domain.account",
+          "label": null,
+          "dotpos": "e,678,430.62 678,310 678,344.67 678,384.59 678,420.21",
+          "points": [
+            [
+              678,
+              310
+            ],
+            [
+              678,
+              345
+            ],
+            [
+              678,
+              385
+            ],
+            [
+              678,
+              420
+            ]
+          ],
+          "labelBBox": null,
+          "parent": "omega.crm.domain",
+          "relations": [
+            "adz1hn"
+          ]
+        },
+        {
+          "id": "omega.crm.domain.contact:omega.crm.domain.lead",
+          "source": "omega.crm.domain.contact",
+          "target": "omega.crm.domain.lead",
+          "label": null,
+          "dotpos": "e,549.69,730.48 376.14,610.2 428.18,646.27 488.39,687.99 541.27,724.64",
+          "points": [
+            [
+              376,
+              610
+            ],
+            [
+              428,
+              646
+            ],
+            [
+              488,
+              688
+            ],
+            [
+              541,
+              725
+            ]
+          ],
+          "labelBBox": null,
+          "parent": "omega.crm.domain",
+          "relations": [
+            "wah6vw"
+          ]
+        },
+        {
+          "id": "omega.crm.domain.account:omega.crm.domain.lead",
+          "source": "omega.crm.domain.account",
+          "target": "omega.crm.domain.lead",
+          "label": null,
+          "dotpos": "e,678,730.62 678,610 678,644.67 678,684.59 678,720.21",
+          "points": [
+            [
+              678,
+              610
+            ],
+            [
+              678,
+              645
+            ],
+            [
+              678,
+              685
+            ],
+            [
+              678,
+              720
+            ]
+          ],
+          "labelBBox": null,
+          "parent": "omega.crm.domain",
+          "relations": [
+            "1dvg36j"
+          ]
+        },
+        {
+          "id": "omega.crm.domain:omega.crm.audit",
+          "source": "omega.crm.domain",
+          "target": "omega.crm.audit",
+          "label": null,
+          "dotpos": "e,731.36,1030.6 710.9,950.4 716.9,973.95 723.08,998.17 728.82,1020.7",
+          "points": [
+            [
+              711,
+              950
+            ],
+            [
+              717,
+              974
+            ],
+            [
+              723,
+              998
+            ],
+            [
+              729,
+              1021
+            ]
+          ],
+          "labelBBox": null,
+          "parent": "omega.crm",
+          "relations": [
+            "hqwv9x"
+          ]
+        },
+        {
+          "id": "omega.crm.domain:omega.crm.utils",
+          "source": "omega.crm.domain",
+          "target": "omega.crm.utils",
+          "label": null,
+          "dotpos": "e,429.46,1030.6 524.76,950.4 495.46,975.06 465.27,1000.5 437.49,1023.9",
+          "points": [
+            [
+              525,
+              950
+            ],
+            [
+              495,
+              975
+            ],
+            [
+              465,
+              1000
+            ],
+            [
+              437,
+              1024
+            ]
+          ],
+          "labelBBox": null,
+          "parent": "omega.crm",
+          "relations": [
+            "1gbb5ta"
+          ]
+        }
+      ]
+    },
+    "view_13o5bip": {
+      "__": "element",
+      "viewOf": "omega",
+      "tags": null,
+      "links": null,
+      "description": null,
+      "title": "Omega",
+      "id": "view_13o5bip",
+      "customColorDefinitions": {},
+      "relativePath": "test.likec4",
+      "autoLayout": {
+        "direction": "TB"
+      },
+      "hash": "35666fad25024ff38c52dc5b3998da8dbf17f508",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 432,
+        "height": 620
+      },
+      "nodes": [
+        {
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Omega",
+          "kind": "system",
+          "id": "omega",
+          "parent": null,
+          "level": 0,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [
+            "omega.crm",
+            "omega.iam"
+          ],
+          "inEdges": [],
+          "outEdges": [],
+          "style": {},
+          "depth": 1,
+          "position": [
+            8,
+            8
+          ],
+          "width": 416,
+          "height": 604,
+          "labelBBox": {
+            "x": 6,
+            "y": 0,
+            "width": 46,
+            "height": 15
+          }
+        },
+        {
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "CRM",
+          "kind": "component",
+          "id": "omega.crm",
+          "parent": "omega",
+          "level": 1,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [],
+          "outEdges": [
+            "omega.crm:omega.iam"
+          ],
+          "style": {},
+          "navigateTo": "view_17t2k5c",
+          "position": [
+            56,
+            69
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 136,
+            "y": 75,
+            "width": 47,
+            "height": 23
+          }
+        },
+        {
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Identity And Access Management",
+          "kind": "component",
+          "id": "omega.iam",
+          "parent": "omega",
+          "level": 1,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [
+            "omega.crm:omega.iam"
+          ],
+          "outEdges": [],
+          "style": {},
+          "position": [
+            48,
+            392
+          ],
+          "width": 335,
+          "height": 180,
+          "labelBBox": {
+            "x": 24,
+            "y": 75,
+            "width": 287,
+            "height": 23
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "omega.crm:omega.iam",
+          "source": "omega.crm",
+          "target": "omega.iam",
+          "label": "Gets permissions",
+          "dotpos": "e,216,392.17 216,249.13 216,290.33 216,339.44 216,381.83",
+          "points": [
+            [
+              216,
+              249
+            ],
+            [
+              216,
+              290
+            ],
+            [
+              216,
+              339
+            ],
+            [
+              216,
+              382
+            ]
+          ],
+          "labelBBox": {
+            "x": 217,
+            "y": 309,
+            "width": 112,
+            "height": 18
+          },
+          "parent": "omega",
+          "relations": [
+            "upkoj0"
+          ]
+        }
+      ]
+    },
+    "main_view": {
+      "__": "element",
+      "tags": null,
+      "links": null,
+      "description": null,
+      "title": null,
+      "id": "main_view",
+      "customColorDefinitions": {},
+      "relativePath": "test.likec4",
+      "autoLayout": {
+        "direction": "TB"
+      },
+      "hash": "98afde83633a208157a48b7784a9dcb196de2310",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 503
+      },
+      "nodes": [
+        {
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Omega",
+          "kind": "system",
+          "id": "omega",
+          "parent": null,
+          "level": 0,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [],
+          "outEdges": [
+            "omega:google"
+          ],
+          "style": {},
+          "navigateTo": "view_13o5bip",
+          "position": [
+            0,
+            0
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 127,
+            "y": 75,
+            "width": 66,
+            "height": 23
+          }
+        },
+        {
+          "links": null,
+          "tags": null,
+          "technology": null,
+          "description": null,
+          "title": "Google",
+          "kind": "system",
+          "id": "google",
+          "parent": null,
+          "level": 0,
+          "color": "primary",
+          "shape": "rectangle",
+          "children": [],
+          "inEdges": [
+            "omega:google"
+          ],
+          "outEdges": [],
+          "style": {},
+          "position": [
+            0,
+            323
+          ],
+          "width": 320,
+          "height": 180,
+          "labelBBox": {
+            "x": 127,
+            "y": 75,
+            "width": 65,
+            "height": 23
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "omega:google",
+          "source": "omega",
+          "target": "google",
+          "label": "makes requests",
+          "dotpos": "e,160.02,322.97 160.02,179.93 160.02,221.13 160.02,270.24 160.02,312.63",
+          "points": [
+            [
+              160,
+              180
+            ],
+            [
+              160,
+              221
+            ],
+            [
+              160,
+              270
+            ],
+            [
+              160,
+              313
+            ]
+          ],
+          "labelBBox": {
+            "x": 161,
+            "y": 240,
+            "width": 103,
+            "height": 18
+          },
+          "parent": null,
+          "relations": [
+            "b2ju7l"
+          ]
+        }
+      ]
+    }
+  }
+}

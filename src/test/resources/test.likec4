@@ -1,0 +1,92 @@
+// to export to json - likec4 export json 
+specification {
+    element system {}
+    element component {}
+
+    element module {}
+}
+
+
+model {
+    omega = system "Omega" {
+        -> google "makes requests"
+
+        crm = component "CRM" {
+            -> iam "Gets permissions"
+
+            domain = module "Domain" {
+                 metadata {
+                  package '..crm.domain..'
+                }
+
+                -> utils
+                -> audit
+
+               
+                account = module "Account" {
+                    metadata {
+                        package '..crm.domain.account..'
+                    }
+
+                    -> lead
+                }
+                lead = module "Lead" {
+                    metadata {
+                        package '..crm.domain.lead..'
+                    }
+                    -> kernel.test
+                }
+
+                contact = module "Contact" {
+                    metadata {
+                        package '..crm.domain.contact..'
+                    }
+                    -> lead
+                }
+
+                opportunity = module "Opportunity" {
+                    metadata {
+                        package '..crm.domain.opportunity..'
+                    }
+                    -> lead
+                    -> contact
+                    -> account
+                }
+            }
+
+            utils = module "Utils" {
+                metadata {
+                  package '..crm.utils..'
+                }
+            }
+
+            audit = module "Audit" {
+                metadata {
+                  package '..crm.audit..'
+                }
+            }
+
+        }
+        iam = component "Identity And Access Management" {
+            test = module "Test" {
+                metadata {
+                  package '..iam.test..'
+                }
+            }
+        }
+    }
+    google = system "Google"
+}
+
+views {
+    view main_view {
+        include *
+    }
+    view of omega {
+        include *
+    }
+    view of omega.crm {
+        include *
+        include domain.*
+    }
+}

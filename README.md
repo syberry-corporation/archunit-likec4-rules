@@ -17,16 +17,22 @@ A Kotlin library that enforces architectural rules based on the **C4 Model** usi
 
 Add the following to your `build.gradle`:
 
+Please notice, that you need to use your GitHub username and token to access the package.
+
 ```groovy
 repositories {
     maven {
-        url = uri("https://maven.pkg.github.com/syberry-corporation/archunit-likec4-rules")
+       url = uri("https://maven.pkg.github.com/syberry-corporation/archunit-likec4-rules")
+       credentials {
+          username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+          password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+       }
     }
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'com.syberry.davinci:archunit-likec4-rules:0.0.1'
+    testImplementation 'com.syberry.davinci:archunit-likec4-rules:0.0.2'
 }
 ```
 

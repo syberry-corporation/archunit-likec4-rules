@@ -101,7 +101,7 @@ publishing {
 
             group = 'com.syberry.davinci'
             version = '0.0.1'
-            artifactId = 'my-library'
+            artifactId = 'archunit-likec4-rules'
         }
     }
 
